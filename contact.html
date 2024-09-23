@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="mailto:uahmadli17458@ada.edu.az" method="post" enctype="text/plain">
+
+        <label for="fullname">Fullname:</label>
+        <input type="text" placeholder="Fullname" id="fullname" name="fullname"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" placeholder="Email" id="email" name="email"><br>
+
+        <label for="subject">Subject:</label>
+        <input type="text" placeholder="Subject" id="subject" name="subject"><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" placeholder="Phone" id="phone" name="phone"><br>
+
+        <label for="password">Password:</label>
+        <input type="password" placeholder="Password" id="password" name="password"><br>
+
+        <input type="date"><br>
+        <input type="number" min="0" step="2"><br>
+
+        <label for="hobby">Your Hobbies:</label>
+        <select name="hobby" id="hobby">
+            <option value="Dancing">Dancing</option>
+            <option value="Playing Piano">Playing Piano</option>
+            <option value="Swimming">Swimming</option>
+        </select>
+        <br>
+
+        <select name="code" id="code">
+            <option value="+994">AZ</option>
+            <option value="+99g">GE</option>
+        </select>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" cols="50" rows="15"></textarea><br>
+
+        <input type="checkbox" name="courses" value="WM1">WM1<br>
+        <input type="checkbox" name="courses" value="WM2">WM2<br>
+        <input type="checkbox" name="courses" value="PP1">PP1<br>
+        <input type="checkbox" name="courses" value="DB">DB<br>
+
+        <input type="radio" name="gender" value="male">Male<br>
+        <input type="radio" name="gender" value="female">Female<br>
+
+        <input type="submit" value="Send!">
+        <button>Gonder!</button>
+        <input type="reset">
+    </form>
+</body>
+
+</html>

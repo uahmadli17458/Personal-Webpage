@@ -1,0 +1,40 @@
+<html>
+
+<body>
+    <form action="mailto:uahmadli17458@ada.edu.az" method="post" enctype="text/plain">
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required><br><br>
+
+        <label for="careerPlans">What career plans do you have?:</label>
+        <input type="text" id="careerPlans" name="careerPlans" placeholder="Career Plans" required><br><br>
+
+        <label for="experience">What any prior experiences do you have? </label>
+        <select id="experience" name="experience" required>
+            <option value="">Select...</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+        <label for="skills">What skills do you have? (Select all that apply):</label><br>
+        <input type="checkbox" id="skill1" name="skills" value="coding">
+        <label for="skill1">Coding</label><br>
+        <input type="checkbox" id="skill2" name="skills" value="design">
+        <label for="skill2">Design</label><br>
+        <input type="checkbox" id="skill3" name="skills" value="management">
+        <label for="skill3">Management</label><br><br>
+
+        <label for="comments">Additional Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"
+            placeholder="Your comments here..."></textarea><br><br>
+
+        <label for="satisfaction">How satisfied are you with our website?:</label>
+        <input type="range" id="satisfaction" name="satisfaction" min="1" max="5" value="3"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
