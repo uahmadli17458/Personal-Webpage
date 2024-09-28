@@ -1,8 +1,67 @@
 <html>
+    <link rel="icon" type="" href="/Users/ulkarahmadli/Personal-Webpage/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e3bcbc; 
+            margin: 0;
+            padding: 20px;
+        }
 
+        form {
+            background-color: #f5e6e6; 
+            border: 1px solid #ddd; 
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+            max-width: 600px; 
+            margin: auto;
+        }
+
+        label {
+            font-weight: bold;
+            color: #333; 
+            display: block; 
+            margin: 10px 0 5px; 
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%; 
+            padding: 10px; 
+            margin-bottom: 15px; 
+            border: 1px solid #ccc; 
+            border-radius: 4px; 
+            box-sizing: border-box; 
+            
+        }
+
+        input[type="submit"] {
+            background-color: #2b0312; 
+            color: white; 
+            border: none; 
+            padding: 10px 15px;
+            border-radius: 5px; 
+            cursor: pointer; 
+            font-size: 16px; 
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049; 
+        }
+
+        textarea {
+            resize: none; 
+        }
+    </style>
+</head>
 <body>
+    
     <form action="mailto:uahmadli17458@ada.edu.az" method="post" enctype="text/plain">
-
         <label for="name">Full Name:</label>
         <input type="text" id="name" name="name" placeholder="Your Name" required><br><br>
 

@@ -4,39 +4,116 @@
 <head>
     <title>My First Website</title>
     <link rel="icon" type="" href="/Users/ulkarahmadli/Personal-Webpage/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        #biography-heading {
+            color: rgb(11, 0, 128);
+        }
+
+        div.navbar>ul {
+            list-style-type: none;
+            margin: 0;
+            background-color: rgb(235, 228, 180);
+        }
+
+        .navbar li {
+            background-color: rgb(246, 222, 226);
+            display: inline;
+            height: 30px;
+            width: 100px;
+            text-align: center;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+
+        .navbar a {
+            background-color: rgb(225, 188, 161);
+            display: block;
+            height: 100%;
+        }
+
+        .navbar a:hover {
+            color: purple;
+            font-weight: bold;
+            background-color: rgb(122, 109, 109);
+        }
+        ul {
+            list-style-type: none; 
+            padding: 0; 
+            margin: 0; 
+        }
+
+        ul li {
+            padding: 10px; 
+            background-color: #f2f2f2; 
+            margin-bottom: 5px;
+            transition: background-color 0.3s; 
+        }
+
+        ul li:hover {
+            background-color: #d9d9d9; 
+        }
+
+        ol {
+            padding: 0; 
+            margin: 0; 
+        }
+
+        ol li {
+            padding: 10px; 
+            background-color: #f2f2f2;
+            margin-bottom: 5px; 
+            transition: background-color 0.3s; 
+        }
+
+        ol li:hover {
+            background-color: #d9d9d9;
+        }
+    </style>
+    </style>
+
 </head>
 
 <body>
+    <div class="navbar">
+        <ul>
 
-    <ul>
-
-        <li><a href="index.html">Home</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="education.html">Education</a></li>
-        <li><a href="experience.html">Experience</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="weeklyschedule.html">Weekly Schedule</a></li>
-        <li><a href="questionnaire.html">Questionnaire</a></li>
-
-
-    </ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="weeklyschedule.html">Weekly Schedule</a></li>
+            <li><a href="questionnaire.html">Questionnaire</a></li>
 
 
-    <img src="computer-image-660.jpg" alt="Computer picture" width="200px" />
+        </ul>
+    </div>
+
+    <img class="profile-picture" src="computer-image-660.jpg" alt="Computer picture" />
+
     <h2>Ulkar Ahmadli</h2>
     <h3>Student of SITE Faculty</h3>
     <h3>
         <a href="https://www.ada.edu.az/en" target="_blank">ADA University</a>
     </h3>
 
-    <h1>Biography</h1>
+    <h1 id="biography-heading">Biography</h1>
     <p>I am a student of
         <a href="https://www.ada.edu.az/en/schools/site" target="_blank">
             SITE
         </a>.
     </p>
-    <p><strong>I am eager to learn.</strong></p>
+    <p class="yellow-text"><strong>I am eager to learn.</strong></p>
 
+    <hr>
 
     <h2>My skills</h2>
     <table>
@@ -66,16 +143,19 @@
         </tr>
     </table>
 
-    <h1>What is new?</h1>
+    <h1 class="rest-heading yellow text">What is new?</h1>
     <ul>
         <li>2024 FALL started!
             <ol>
-                <li>Web1 Course started!</li>
+                <li class="yellow-text">Web1 Course started!</li>
                 <li>DevFest started!</li>
             </ol>
-
         </li>
     </ul>
+    <img style="border-radius: 50%; width: 300px; height: 300px;" src="/Users/ulkarahmadli/Personal-Webpage/images.png"
+        alt="DevFest">
+    <h1 class="rest-heading">Dummy text</h1>
+
 </body>
 
 </html>

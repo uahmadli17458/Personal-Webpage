@@ -1,0 +1,67 @@
+h1 {
+    color: rgb(47, 1, 17);
+    font-weight: normal;
+}
+
+.rest-heading {
+    color: rebeccapurple;
+}
+
+.yellow-text {
+    color: yellow;
+}
+
+body {
+    background-color: beige;
+    font-family: "Edu Australia VIC WA NT Hand Guides", cursive;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 20px;
+    /*font-style: italic;*/
+    font-family: "Edu Australia VIC WA NT Hand Guides", cursive;
+}
+
+.skills-paragraph {
+    font-weight: 600;
+}
+
+/*a {
+    color: blueviolet;
+}
+
+a:visited {
+    color: palevioletred;
+}
+*/
+a:hover {
+    color: rgb(111, 30, 127);
+    font-weight: bold;
+    background-color: rgb(238, 167, 167);
+}
+
+h2 {
+    font-weight: normal
+}
+hr {
+    width: 50%;
+    margin: 0 auto;
+    border: none;
+    border-top: 5px dashed black; 
+}
+
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: width 0.3s ease, height 0.3s ease; 
+}
+
+.profile-picture:hover {
+    width: 220px; 
+    height: 220px; 
+}
