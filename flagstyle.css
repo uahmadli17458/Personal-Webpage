@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.flag{
+    width: 80vw; 
+    aspect-ratio: 2 / 1; 
+    border: 2px solid #000;
+    display: flex;
+    flex-direction: column;
+}
+
+.stripe{
+    width: 100%;
+    height: calc(100% / 3);
+}
+.blue{
+    background-color: #00B5E2;
+}
+
+.red{
+    background-color: #EF3340;
+    position: relative;
+}
+
+.green{
+    background-color: #509E2F;
+}
+
+.crescent{
+    position: absolute;
+    width: 20%; 
+    height: 20%;
+    background: radial-gradient(circle at 50% 50%, white 45%, transparent 50%), radial-gradient(circle at 40% 50%, transparent 40%, #EF3340 42%);
+    border-radius: 50%;
+    left: 30%; 
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.star {
+    position: absolute;
+    top: 50%;
+    left: 30%; 
+    width: 10%;
+    height: 10%;
+    background-color: #FFFFFF;  
+    clip-path: polygon(
+        50% 0%, 
+        61.8% 35%, 
+        98% 35%, 
+        68.5% 57%, 
+        79.5% 91%, 
+        50% 70%, 
+        20.5% 91%, 
+        31.5% 57%, 
+        2% 35%, 
+        38.2% 35%
+    ); 
+    transform: translate(-50%, -50%); /
+}
