@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   
+
+    <style>
+        .container{
+            display: flex;
+            width: 80%;
+            margin: auto;
+            /*gap: 10px;
+            flex-direction: row-reverse;
+            flex-wrap: wrap-reverse;
+            */
+            flex-flow: row wrap;
+            justify-content: space-around;
+            align-items: stretch;
+
+        }
+        .container > div{
+            min-width: 200px;
+        }
+        div{
+            height: 300px;
+            float: left;
+        }
+
+        .div1{
+            background-color: cornflowerblue;
+            width: 300px;
+            min-width: 200px;
+        }
+
+        .div2{
+            background-color: rgb(209, 235, 132);
+            width: 500px;
+            order: 4;
+            min-width: 200px;
+        }
+
+        .div3{
+            background-color: darkgreen;
+            width: 200px;
+            align-self: flex-end;
+        }
+        
+        .div4{
+            background-color: rgb(245, 136, 194);
+            width: 500px;
+            min-width: 200px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .div2, .div4 {
+                width: 100%;
+            }
+        }
+
+        /* Media query for screens smaller than 480px */
+        @media (max-width: 480px) {
+            div {
+                height: 200px;
+            }
+
+            .div1, .div3 {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div classs="container">
+    <div class="div1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Magnam porro dolore neque, recusandae corporis eius earum sequi 
+        delectus accusamus veritatis qui quam eligendi voluptate corrupti! 
+        Quos assumenda accusamus rerum tempore!
+    </div>
+    <div class="div2">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        Ullam, autem.
+    </div>
+    <div class="div3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Debitis ducimus cumque ab repellendus, incidunt impedit obcaecati.
+    </div>
+    <div class="div4">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ratione 
+    suscipit magni maiores eius? Sunt incidunt earum vitae.
+</div>
+</div>
+</body>
+
+</html>

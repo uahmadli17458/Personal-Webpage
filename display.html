@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Demo</title>
+    <style>
+        body{
+            height: 1000px;
+        }
+        p{
+            width: 600px;
+            background-color: cadetblue;
+        }
+
+        li{
+            width: 300px;
+            background-color: rgb(163, 156, 233);
+            margin-top: 5px;
+        }
+
+        a{
+            display: inline block;
+            width: 500px;
+            height: 50px;
+            background-color: rgb(163, 96, 141);
+            visibility: hidden;
+        }
+
+        span{
+            display: inline block;
+            height: 50px;
+            background-color: goldenrod;
+        }
+
+        img{
+            width: 200px;
+            height: 200px ;
+        }
+        .card{
+            margin: 5px auto;
+            width: 200px;
+            border-radius: 10px;
+            background-color: bisque; 
+        }
+
+        .card.title{
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .card.info{
+            width: 90%;
+            margin: 10px auto 0;
+        }
+
+        .card.info{
+            display: inline;
+        }
+
+        .card.title{
+            background-color: darkolivegreen;
+            position: absolute;
+            top: 30px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.w3schools.com/css/css_display_visibility.asp">w3schools</a>
+    <img src="https://picsum.photos/seed/picsum/100/100" alt="mountain picsum"> 
+    <span>This is an inline text</span>
+    <ul>
+        <li>Visual</li>
+        <li>Intellij</li>
+        <li>Oracle</li>
+    </ul>
+    <p>Demo</p>
+    <p>Test</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptate voluptatibus 
+        sed nesciunt dolorem aliquam alias asperiores, omnis consectetur blanditiis numquam ea, 
+        sequi repudiandae corporis, possimus recusandae at commodi adipisci?</p>
+    <div class="mini-container">
+    <div class="card">
+        <p class="card-title">MacBook</p>
+        <img class="card-image"
+         src="https://cdn.thewirecutter.com/wp-content/media/2022/08/macbook-2048px-9765.jpg" alt="MacBook">
+        <div class="card-info">
+            <span class="card-info-price">5000</span>
+            <span class="card-info-model">M1</span>
+        </div>
+    </div>
+</body> 
+</html>

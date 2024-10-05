@@ -12,72 +12,139 @@
         rel="stylesheet">
 
     <style>
+        .profile-container {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            margin: 20px 0;
+            gap: 20px;
+        }
+
+        .profile-picture {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .profile-bio {
+            max-width: 600px;
+        }
+
         #biography-heading {
             color: rgb(11, 0, 128);
         }
 
-        div.navbar>ul {
-            list-style-type: none;
-            margin: 0;
+        .navbar {
+            position: sticky;
+            top: 0;
             background-color: rgb(235, 228, 180);
+            z-index: 1000;
+            width: 100%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        .navbar li {
-            background-color: rgb(246, 222, 226);
-            display: inline;
-            height: 30px;
-            width: 100px;
-            text-align: center;
+        .navbar ul {
+            list-style-type: none;
             margin: 0;
-            box-sizing: border-box;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
 
+
+        .navbar li {
+            display: inline block;
         }
 
         .navbar a {
-            background-color: rgb(225, 188, 161);
             display: block;
-            height: 100%;
+            padding: 15px 20px;
+            text-decoration: none;
+            color: #333;
+            background-color: rgb(225, 188, 161);
+            transition: background-color 0.3s, color 0.3s;
         }
 
         .navbar a:hover {
-            color: purple;
-            font-weight: bold;
             background-color: rgb(122, 109, 109);
+            color: white;
+            font-weight: bold;
         }
+
+        .navbar a.active {
+            background-color: rgb(11, 0, 128);
+            color: white;
+            font-weight: bold;
+        }
+
+        .navbar a.active:hover {
+            background-color: rgb(11, 0, 128);
+            color: white;
+            font-weight: bold;
+        }
+
         ul {
-            list-style-type: none; 
-            padding: 0; 
-            margin: 0; 
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
         }
 
         ul li {
-            padding: 10px; 
-            background-color: #f2f2f2; 
+            padding: 10px;
+            background-color: #f2f2f2;
             margin-bottom: 5px;
-            transition: background-color 0.3s; 
+            transition: background-color 0.3s;
         }
 
         ul li:hover {
-            background-color: #d9d9d9; 
+            background-color: #d9d9d9;
         }
 
         ol {
-            padding: 0; 
-            margin: 0; 
+            padding: 0;
+            margin: 0;
         }
 
         ol li {
-            padding: 10px; 
+            padding: 10px;
             background-color: #f2f2f2;
-            margin-bottom: 5px; 
-            transition: background-color 0.3s; 
+            margin-bottom: 5px;
+            transition: background-color 0.3s;
         }
 
         ol li:hover {
             background-color: #d9d9d9;
         }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .gallery img {
+            flex: 1 1 30%;
+            max-width: 200px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s;
+            object-fit: cover;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .gallery img {
+                flex: 1 1 100%;
+                max-width: 90%;
+            }
+        }
     </style>
-    </style>
+
 
 </head>
 
@@ -97,23 +164,36 @@
         </ul>
     </div>
 
-    <img class="profile-picture" src="computer-image-660.jpg" alt="Computer picture" />
+    <div class="profile-container">
+        <img class="profile-picture" src="computer-image-660.jpg" alt="Computer picture" />
+        <div class="profile-bio">
+            <h2>Ulkar Ahmadli</h2>
+            <h3>Student of SITE Faculty</h3>
+            <h3>
+                <a href="https://www.ada.edu.az/en" target="_blank">ADA University</a>
+            </h3>
 
-    <h2>Ulkar Ahmadli</h2>
-    <h3>Student of SITE Faculty</h3>
-    <h3>
-        <a href="https://www.ada.edu.az/en" target="_blank">ADA University</a>
-    </h3>
-
+            <p>I am a student of
+                <a href="https://www.ada.edu.az/en/schools/site" target="_blank">
+                    SITE
+                </a>.
+            </p>
+        </div>
+    </div>
     <h1 id="biography-heading">Biography</h1>
-    <p>I am a student of
-        <a href="https://www.ada.edu.az/en/schools/site" target="_blank">
-            SITE
-        </a>.
-    </p>
     <p class="yellow-text"><strong>I am eager to learn.</strong></p>
 
     <hr>
+    <h2>Photo Gallery</h2>
+    <div class="gallery">
+        <img src="/Users/ulkarahmadli/Personal-Webpage/asian-woman-working-on-laptop-woman-it-developer-programming-code-freelance-remote-working-vector.jpg"
+            alt="photo 1">
+        <img src="/Users/ulkarahmadli/Personal-Webpage/programmer-working-desk_23-2148288753.avif" alt="photo 2">
+        <img src="/Users/ulkarahmadli/Personal-Webpage/programmer-working-web-development-code-engineer-programming-python-php-java-script-computer_90220-249.avif"
+            alt="photo 3">
+        <img src="/Users/ulkarahmadli/Personal-Webpage/young-female-geek-character-woman-programmer-coding-blogger-content-develop-or-software-programming-casual-technology-worker-snugly-development-2KFX715.jpg"
+            alt="photo 4">
+    </div>
 
     <h2>My skills</h2>
     <table>
